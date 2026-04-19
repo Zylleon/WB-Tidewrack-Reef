@@ -26,7 +26,7 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 			</li>
-				<li Class="Tidewrack.CompProperties_Gatherable">
+				<li Class="ZWBCore.CompProperties_Gatherable">
 				<itemDef>ZWB_SnailSilk</itemDef>
 				<growthLabel>Silk production</growthLabel>
 				<gatherIntervalDays>10</gatherIntervalDays>
