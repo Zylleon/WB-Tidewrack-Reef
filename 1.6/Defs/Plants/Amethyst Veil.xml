@@ -4,7 +4,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>ZWB_AmethystVeil</defName>
 		<label>amethyst veil</label>
-		<description>A foliose coral, which can be harvested and refined into a textile. This soft, luxurious fabric is highly prized.</description>
+		<description>A foliose coral, which can be harvested and refined into a textile. This soft, luxurious fabric is highly prized.\n\nAmethyst veil is difficult to cultivate, but can be grown by those that know the secrets of devilstrand.</description>
 		<neverMultiSelect>false</neverMultiSelect>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>

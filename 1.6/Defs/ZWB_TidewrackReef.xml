@@ -5,7 +5,7 @@
 	<BiomeDef>
 		<defName>ZWB_TidewrackReef</defName>
 		<label>Tidewrack reef</label>
-		<description>The remnants of what was once a tropical coral reef. Over time, the oceans receded and the land dried up. Rather than follow the ocean, the flora and fauna that made the reef their home have instead adapted to land.</description>
+		<description>The remnants of what was once a tropical coral reef. Over time, the oceans receded and the land dried up. Rather than follow the ocean, the flora and fauna that made the reef their home have instead adapted to land.\n\nThis biome is colorful, lively, and abundant.</description>
 		<texture>ZWB_Textures/TidewrackReef</texture>
 		<workerClass>Tidewrack.BiomeWorker_TidewrackReef</workerClass>
 		<settlementSelectionWeight>0.5</settlementSelectionWeight>
