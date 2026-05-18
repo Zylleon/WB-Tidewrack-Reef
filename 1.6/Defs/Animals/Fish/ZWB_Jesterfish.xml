@@ -8,11 +8,12 @@
 		<label>jesterfish</label>
 		<description>A large semiamphibious pack animal descended from a species of clown fish that had adapted to a land based lifestyle. Jesterfish are used throughout the Rim as pack animals and livestock due to their docile nature.</description>
 		<statBases>
-			<MoveSpeed>3.2</MoveSpeed>
+			<MoveSpeed>4.2</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>40</ComfyTemperatureMax>
-			<MarketValue>270</MarketValue>
+			<MarketValue>290</MarketValue>
 			<FilthRate>16</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 			<Wildness>0.15</Wildness>
 		</statBases>
 		<comps>
