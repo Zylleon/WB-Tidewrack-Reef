@@ -193,10 +193,11 @@
 			<ZWB_ReefGull>0.7</ZWB_ReefGull>
 
 			<!-- Predators -->
-			<ZWB_IronheadDunk>0.025</ZWB_IronheadDunk>
+			<ZWB_IronheadDunk>0.03</ZWB_IronheadDunk>
 			<ZWB_RainbowZiggler>0.1</ZWB_RainbowZiggler>
 			<ZWB_SeafoamZiggler>0.1</ZWB_SeafoamZiggler>
 			<ZWB_RosyZiggler>0.1</ZWB_RosyZiggler>
+			<ZWB_Knifehead>0.1</ZWB_Knifehead>
 
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">

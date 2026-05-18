@@ -171,7 +171,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>ZWB_EggSpottedShooblerFertilized</defName>
 		<label>spotted shoobler egg (fert.)</label>
-		<description>A fertilized spotted shoobler egg. If all goes well, it should hatch into a baby sunrise tang. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized spotted shoobler egg. If all goes well, it should hatch into a baby spotted shoobler. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(203, 96, 75)</color>
@@ -194,7 +194,7 @@
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>ZWB_EggSpottedShooblerUnfertilized</defName>
 		<label>spotted shoobler egg (unfert.)</label>
-		<description>An unfertilized sunrise tang egg. It can be eaten raw, but it's much better cooked.</description>
+		<description>An unfertilized spotted shoobler egg. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 			<color>(203, 96, 75)</color>

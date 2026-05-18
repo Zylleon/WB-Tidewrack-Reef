@@ -6,7 +6,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>ZWB_Flumbus</defName>
 		<label>flumbus</label>
-		<description>A largepack animal descended from a grouper. Flumbuses are peaceful if left alone.</description>
+		<description>A large pack animal descended from a grouper. Flumbuses are peaceful if left alone.</description>
 		<statBases>
 			<MoveSpeed>4.1</MoveSpeed>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
