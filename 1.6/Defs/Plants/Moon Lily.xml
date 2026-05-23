@@ -70,7 +70,7 @@
 			</li>
 		</comps>
 		<ingestible>
-			<preferability>RawTasty</preferability>
+			<preferability>MealFine</preferability>
 			<tasteThought/>
 			<foodType>VegetableOrFruit</foodType>
 			<outcomeDoers>
@@ -89,6 +89,8 @@
 		<label>moon jelly tranquillity</label>
 		<description>I feel calm and peaceful, ready to rest.</description>
 		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>12500~16500</disappearsAfterTicks>
