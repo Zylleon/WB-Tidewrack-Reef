@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<ZWBCore.PlantClusterIncidentDef>
+		<defName>ZWB_Incident_RedAlgae</defName>
+		<label>red algae bloom</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<minRefireDays>50</minRefireDays>
+		<workerClass>ZWBCore.IncidentWorker_PlantCluster</workerClass>
+		<plantDef>ZWB_RedAlgae</plantDef>
+		<numClusters>6~9</numClusters>
+		<countPerCluster>33~66</countPerCluster>
+		<spawnRadius>5~12</spawnRadius>
+		<baseChance>1.0</baseChance>
+		<letterLabel>red algae bloom</letterLabel>
+		<letterText>Several blooms of an ugly red algae have appeared nearby. Cutting this algae will cause it to release spores, and grow back thicker.\n\nFortunately, if you wait a few days, the algae will complete its lifecycle and die off on its own.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<allowedBiomes>
+			<li>ZWB_TidewrackReef</li>
+		</allowedBiomes>
+	</ZWBCore.PlantClusterIncidentDef>
+
+
+
+
+
+
+
+	<ThingDef ParentName="PlantBase">
+		<defName>ZWB_RedAlgae</defName>
+		<label>red algae</label>
+		<description>Small clumps of a reddish algae. Kind of gross. Cutting this may cause it to come back thicker. Fortunately, red algae is short lived.</description>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>-4</Beauty>
+			<BeautyOutdoors>-4</BeautyOutdoors>
+			<!-- <Nutrition>0.15</Nutrition> -->
+		</statBases>
+		
+		<graphicData>
+			<texPath>ZWB_Textures/Plants/RedAlgae</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>TransparentPlant</shaderType>
+		</graphicData>
+		
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible>
+			<!-- <foodType>None</foodType> -->
+			<preferability>NeverForNutrition</preferability>
+			</ingestible>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>1.5</growDays>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.45~0.65</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<harvestWork>90</harvestWork>
+			<harvestYield>3</harvestYield>
+			<harvestedThingDef>ZWB_RedAlgae</harvestedThingDef>
+			<lifespanDaysPerGrowDays>2.2</lifespanDaysPerGrowDays>
+			<harvestMinGrowth>0.1</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<wildOrder>1</wildOrder>
+			<dieIfLeafless>true</dieIfLeafless>
+		</plant>
+	</ThingDef>
+
+
+</Defs>
