@@ -332,7 +332,7 @@
 		<label>marine chitin</label>
 		<description>A metallic chitin, probably harvested from a large snail or crab.</description>
 		<graphicData>
-			<texPath>ZWB_Textures/Things/MarineChitin</texPath>
+			<texPath>ZWB_Textures/Things/Chitin</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(110,93,75)</color>
 		</graphicData>

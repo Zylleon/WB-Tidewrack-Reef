@@ -35,7 +35,7 @@
 			<baseHealthScale>0.60</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<trainability>Intermediate</trainability>
-			<meatLabel>snail meat</meatLabel>
+			<meatLabel>sea snail meat</meatLabel>
 			<lifeExpectancy>11</lifeExpectancy>
 			<petness>0.8</petness>
 			<nuzzleMtbHours>24</nuzzleMtbHours>

@@ -12,7 +12,7 @@
 		<movementDifficulty>1.5</movementDifficulty>
 		<animalDensity>5.0</animalDensity>
 		<plantDensity>0.9</plantDensity>
-		<wildPlantRegrowDays>12</wildPlantRegrowDays>
+		<wildPlantRegrowDays>16</wildPlantRegrowDays>
 		<forageability>1</forageability>
 		<foragedFood>ZWB_Algfruit</foragedFood>
 		<maxFishPopulation>720</maxFishPopulation>
@@ -122,7 +122,7 @@
 			<SnowHard>4</SnowHard>
 			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
 			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
-			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.5</TorrentialRain>
+			<Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sandstorm>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<!-- ground cover -->
