@@ -219,6 +219,9 @@
 			<li>Alpaca</li>
 			<li>Dromedary</li>
 		</allowedPackAnimals>
+		<extraGenSteps>
+			  <li>ZWB_GenstepScatterSeashells</li>
+		</extraGenSteps>
 	</BiomeDef>
 
 </Defs>
