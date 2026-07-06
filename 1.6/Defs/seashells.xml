@@ -43,7 +43,7 @@
 		<graphicData>
 			<texPath>ZWB_Textures/Things/SeashellGiant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>2.2</drawSize>
+			<drawSize>3.0</drawSize>
 			<shadowData>
 				<volume>(0.7,0.3,1.2)</volume>
 			</shadowData>
