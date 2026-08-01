@@ -16,7 +16,7 @@ namespace Tidewrack
             {
                 return -100f;
             }
-            if (tile.temperature < -8f)
+            if (tile.temperature < 6f)
             {
                 return 0f;
             }

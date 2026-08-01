@@ -24,10 +24,10 @@
 		<plant>
 			<fertilityMin>0.5</fertilityMin>
 			<dieIfLeafless>true</dieIfLeafless>
-			<fertilitySensitivity>1.2</fertilitySensitivity>
+			<fertilitySensitivity>1.15</fertilitySensitivity>
 			<growDays>9.5</growDays>
 			<immatureGraphicPath>ZWB_Textures/Plants/MoonLily_Immature</immatureGraphicPath>
-			<harvestYield>21</harvestYield>
+			<harvestYield>16</harvestYield>
 			<harvestWork>250</harvestWork>
 			<harvestTag>Standard</harvestTag>
 			<!-- <harvestAfterGrowth>0.30</harvestAfterGrowth> -->
@@ -41,7 +41,7 @@
 			<humanFoodPlant>true</humanFoodPlant>
 			<mustBeWildToSow>true</mustBeWildToSow>
 			<sowWork>400</sowWork>
-			<sowMinSkill>5</sowMinSkill>
+			<sowMinSkill>7</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
