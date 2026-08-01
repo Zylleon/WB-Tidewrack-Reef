@@ -326,7 +326,7 @@
 
 
 	<!-- chitin, for large snails and crabs -->
-	
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>ZWB_MarineChitin</defName>
 		<label>marine chitin</label>
@@ -387,6 +387,19 @@
 	</ThingDef>
 
 
+
+	<!-- fish meat -->
+
+	<ThingDef ParentName="ZWB_MeatBase">
+		<defName>Meat_ZWB_Jesterfish</defName>
+		<label>ocean fish meat</label>
+		<graphicData>
+			<texPath>ZWB_Textures/Things/OceanFishMeat</texPath>
+		</graphicData>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+	</ThingDef>
 
 </Defs>
 
