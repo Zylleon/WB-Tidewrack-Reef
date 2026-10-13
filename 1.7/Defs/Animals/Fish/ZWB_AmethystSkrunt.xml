@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>ZWB_AmethystSkrunt</defName>
+		<label>amethyst skrunt</label>
+		<description>A small creature that often makes its nests within amethyst veils. Many consider it a nuisance and see it as a bad omen.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<MarketValue>40</MarketValue>
+			<Wildness>0.5</Wildness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>ZWB_EggAmethystSkruntUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>ZWB_EggAmethystSkruntFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>3.5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+			<body>ZWB_BipedLandFish</body>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHungerRate>0.1</baseHungerRate>
+			<baseHealthScale>0.30</baseHealthScale>
+			<foodType>OmnivoreRoughAnimal</foodType>
+			<useMeatFrom>ZWB_Jesterfish</useMeatFrom>
+			<leatherDef>ZWB_Leather_Fishskin</leatherDef>
+			<trainability>None</trainability>
+			<lifeExpectancy>8</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>ZWB_SmallFish_Wounded</soundWounded>
+					<soundDeath>ZWB_SmallFish_Death</soundDeath>
+					<soundCall>ZWB_SmallFish_Call</soundCall>
+					<soundAngry>ZWB_SmallFish_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundEating>Rodent_Eat</soundEating>
+			<packAnimal>false</packAnimal>
+			<!-- <headPosPerRotation> -->
+			<!-- <li>(0.0, 0, 0.09)</li> -->
+			<!-- <li>(0.28, 0, 0)</li> -->
+			<!-- <li>(0.0, 0, -0.04)</li> -->
+			<!-- <li>(-0.28, 0, 0)</li> -->
+			<!-- </headPosPerRotation> -->
+		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+			<li>
+				<label>left flipper</label>
+				<labelNoLocation>flipper</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>3.3</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>ZWB_FrontLeftFlipper</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right flipper</label>
+				<labelNoLocation>flipper</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>3.3</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>ZWB_FrontRightFlipper</linkedBodyPartsGroup>
+			</li>
+		</tools>
+	</ThingDef>
+
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>ZWB_AmethystSkrunt</defName>
+		<label>amethyst skrunt</label>
+		<race>ZWB_AmethystSkrunt</race>
+		<combatPower>30</combatPower>
+		<ecoSystemWeight>0.20</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>amethyst skrunt fry</label>
+				<labelPlural>amethyst skrunt fry</labelPlural>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/AmethystSkrunt/AmethystSkrunt</texPath>
+					<drawSize>0.35</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/AmethystSkrunt/Dessicated_AmethystSkrunt</texPath>
+					<drawSize>0.35</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/AmethystSkrunt/AmethystSkrunt</texPath>
+					<drawSize>0.65</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/AmethystSkrunt/Dessicated_AmethystSkrunt</texPath>
+					<drawSize>0.65</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/AmethystSkrunt/AmethystSkrunt</texPath>
+					<drawSize>0.85</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/AmethystSkrunt/Dessicated_AmethystSkrunt</texPath>
+					<drawSize>0.85</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>ZWB_EggAmethystSkruntFertilized</defName>
+		<label>amethyst skrunt egg (fert.)</label>
+		<description>A fertilized amethyst skrunt egg. If all goes well, it should hatch into a baby amethyst skrunt. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(135,81,150)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<Nutrition>0.5</Nutrition>
+			<MarketValue>16.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>ZWB_AmethystSkrunt</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>ZWB_EggAmethystSkruntUnfertilized</defName>
+		<label>amethyst skrunt egg (unfert.)</label>
+		<description>An unfertilized amethyst skrunt egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(90,49,111)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+	</ThingDef>
+
+
+</Defs>

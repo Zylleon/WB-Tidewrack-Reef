@@ -2,7 +2,10 @@
 <ModMetaData>
 	<name>Wayward Biomes: Tidewrack Reef</name>
 	<author>Zylle</author>
-	<supportedVersions><li>1.6</li></supportedVersions>
+	<supportedVersions>
+		<li>1.6</li>
+		<li>1.7</li>
+	</supportedVersions>
 	<packageId>zylle.WaywardBiomes.Landreef</packageId>
 	<modIconPath IgnoreIfNoMatchingField="True">GUI/ZModLogo</modIconPath>
 	<description>Tidewrack Reef: The remnants of what was once a tropical coral reef. Over time, the oceans receded and the land dried up. Rather than follow the ocean, the flora and fauna that made the reef their home have adapted to land.

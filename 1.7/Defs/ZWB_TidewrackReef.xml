@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<BiomeDef>
+		<defName>ZWB_TidewrackReef</defName>
+		<label>Tidewrack reef</label>
+		<description>The remnants of what was once a tropical coral reef. Over time, the oceans receded and the land dried up. Rather than follow the ocean, the flora and fauna that made the reef their home have instead adapted to land.\n\nThis biome is colorful, lively, and abundant.</description>
+		<texture>ZWB_Textures/TidewrackReef</texture>
+		<workerClass>Tidewrack.BiomeWorker_TidewrackReef</workerClass>
+		<settlementSelectionWeight>0.5</settlementSelectionWeight>
+		<movementDifficulty>1.5</movementDifficulty>
+		<animalDensity>5.0</animalDensity>
+		<plantDensity>0.9</plantDensity>
+		<wildPlantRegrowDays>16</wildPlantRegrowDays>
+		<forageability>1</forageability>
+		<foragedFood>ZWB_Algfruit</foragedFood>
+		<maxFishPopulation>720</maxFishPopulation>
+		<!-- <wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility> -->
+		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+			<freshwater_Common>
+				<Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
+			</freshwater_Common>
+			<freshwater_Uncommon>
+				<Fish_Piranha MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Piranha>
+			</freshwater_Uncommon>
+			<saltwater_Common>
+				<Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna>
+				<Fish_Flounder MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Flounder>
+			</saltwater_Uncommon>
+			<rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Tropical</rareCatchesSetMaker>
+		</fishTypes>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		<diseaseMtbDays>60</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>50</commonality>
+			</li>
+
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<riverbankTerrain>ZWB_BiogenicSand</riverbankTerrain>
+		<waterShallowTerrain>WaterOceanShallow</waterShallowTerrain>
+		<waterDeepTerrain>WaterOceanDeep</waterDeepTerrain>
+		<terrainsByFertility>
+			<li>
+				<terrain>Sand</terrain>
+				<min>-999</min>
+				<max>0.25</max>
+			</li>
+			<li>
+				<terrain>ZWB_GenicSand</terrain>
+				<min>0.25</min>
+				<max>0.65</max>
+			</li>
+			<li>
+				<terrain>ZWB_BiogenicSand</terrain>
+				<min>0.65</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.022</perlinFrequency>
+				<isPond>true</isPond>
+				<thresholds>
+					<li>
+						<terrain>ZWB_BiogenicSand</terrain>
+						<min>0.45</min>
+						<max>0.82</max>
+					</li>
+					<li>
+						<terrain>WaterOceanShallow</terrain>
+						<min>0.82</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>1.5</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>2</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+			<Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sandstorm>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<!-- ground cover -->
+			<ZWB_ValentineTrumpets>0.08</ZWB_ValentineTrumpets>
+			<ZWB_LilacFrill>0.65</ZWB_LilacFrill>
+			<ZWB_Sinkweed>3.5</ZWB_Sinkweed>
+			<ZWB_Seagrass>1.7</ZWB_Seagrass>
+			<ZWB_Kelp>1.7</ZWB_Kelp>
+			<ZWB_AmberTube>0.05</ZWB_AmberTube>
+			<ZWB_SeaGourd>0.2</ZWB_SeaGourd>
+			<ZWB_LilacShabble>0.2</ZWB_LilacShabble>
+
+			<ZWB_Firegrass>0.15</ZWB_Firegrass>
+			<ZWB_SaltPot>1.3</ZWB_SaltPot>
+			<ZWB_CobaltScrunge>0.25</ZWB_CobaltScrunge>
+			<ZWB_SeaFingers>0.005</ZWB_SeaFingers>
+			<ZWB_Anemone>0.015</ZWB_Anemone>
+			<ZWB_AmberFrill>0.025</ZWB_AmberFrill>
+			<ZWB_SpindledBiffin>0.07</ZWB_SpindledBiffin>
+
+			<!-- harvestable for materials -->
+			<ZWB_StarCoral>1.1</ZWB_StarCoral>
+			<ZWB_Brainstone>0.5</ZWB_Brainstone>
+
+			<ZWB_LauBranch>0.08</ZWB_LauBranch>
+
+			<ZWB_Heliopora>0.2</ZWB_Heliopora>
+			<ZWB_AzureFanwood>0.35</ZWB_AzureFanwood>
+
+			<!-- harvestable food -->
+			<ZWB_AlgfruitCoral>0.1</ZWB_AlgfruitCoral>
+			<ZWB_BerryGrass>0.1</ZWB_BerryGrass>
+			<ZWB_MoonLily>0.2</ZWB_MoonLily>
+
+			<!-- harvestable other -->
+			<ZWB_AmethystVeil>0.035</ZWB_AmethystVeil>
+			<ZWB_FireCoral>0.003</ZWB_FireCoral>
+
+		</wildPlants>
+		<wildAnimals>
+			<!-- Large grazers -->
+			<ZWB_SunriseTang>0.8</ZWB_SunriseTang>
+			<ZWB_Ramari>0.3</ZWB_Ramari>
+			<ZWB_Jesterfish>0.6</ZWB_Jesterfish>
+			<ZWB_Melu>0.25</ZWB_Melu>
+			<ZWB_Flumbus>0.2</ZWB_Flumbus>
+			<ZWB_Harbler>0.3</ZWB_Harbler>
+			
+			<ZWB_SumpterSnail>0.1</ZWB_SumpterSnail>
+			<ZWB_LemonGrabbler>0.15</ZWB_LemonGrabbler>
+
+			<!-- Small Grazers -->
+			<ZWB_MidnightTang>0.6</ZWB_MidnightTang>
+			<ZWB_AmethystSkrunt>0.2</ZWB_AmethystSkrunt>
+			<ZWB_SpottedShoobler>0.8</ZWB_SpottedShoobler>
+			<ZWB_BananaGraf>0.25</ZWB_BananaGraf>
+
+			<ZWB_Snurble>0.3</ZWB_Snurble>
+			<ZWB_CoiledBitte>0.4</ZWB_CoiledBitte>
+			<ZWB_MediMollusc>0.3</ZWB_MediMollusc>
+			
+			<HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
+			<ZWB_Bubbler>0.2</ZWB_Bubbler>
+			
+			
+			<!-- scavengers -->
+			<ZWB_Flumbie>0.9</ZWB_Flumbie>
+			<ZWB_ReefGull>0.7</ZWB_ReefGull>
+
+			<!-- Predators -->
+			<ZWB_IronheadDunk>0.03</ZWB_IronheadDunk>
+			<ZWB_RainbowZiggler>0.1</ZWB_RainbowZiggler>
+			<ZWB_SeafoamZiggler>0.1</ZWB_SeafoamZiggler>
+			<ZWB_RosyZiggler>0.1</ZWB_RosyZiggler>
+			<ZWB_Knifehead>0.1</ZWB_Knifehead>
+
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<ZWB_Flumbie>1</ZWB_Flumbie>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+			<Rat>1</Rat>
+			<Boomrat>0.4</Boomrat>
+			<Boomalope>0.1</Boomalope>
+		</pollutionWildAnimals>
+		<coastalWildAnimals>
+			<SeaLion MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaLion>
+			<Seal MayRequire="Ludeon.RimWorld.Odyssey">0.1</Seal>
+			<StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+			<Otter MayRequire="Ludeon.RimWorld.Odyssey">0.1</Otter>
+			<SeaTurtle MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaTurtle>
+		</coastalWildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Alpaca</li>
+			<li>Dromedary</li>
+		</allowedPackAnimals>
+		<extraGenSteps>
+			  <li>ZWB_GenstepScatterSeashells</li>
+		</extraGenSteps>
+	</BiomeDef>
+
+</Defs>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>ZWB_DredgewoodFloor</defName>
+		<label>dredgewood floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Dredgewood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>ZWB_Textures/Terrain/DredgewoodFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(227,184,180)</color>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>125</WorkToBuild>
+			<Flammability>0.075</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<costList>
+			<ZWB_Dredgewood>4</ZWB_Dredgewood>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<!-- <uiOrder>2000</uiOrder> -->
+	</TerrainDef>
+
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>ZWB_FineDredgewoodFloor</defName>
+		<label>fine dredgewood floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Dredgewood plank flooring, lovingly laid in an elegant design. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>ZWB_Textures/Terrain/FineDredgewoodFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(227,184,180)</color>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Flammability>0.075</Flammability>
+			<Beauty>4</Beauty>
+		</statBases>
+		<costList>
+			<ZWB_Dredgewood>18</ZWB_Dredgewood>
+		</costList>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<constructEffect>ConstructWood</constructEffect>
+		<!-- <uiOrder>2000</uiOrder> -->
+	</TerrainDef>
+
+
+<!--
+
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>ZWB_CoralithFloor</defName>
+		<label>coralith floor</label>
+		<color>(140,100,112)</color>
+		<texturePath>ZWB_Textures/Terrain/CoralithFloor</texturePath>
+		<costList>
+			<ZWB_CoralithChunk>5</ZWB_CoralithChunk>
+		</costList>
+		<statBases>
+			<Beauty>4</Beauty>
+		</statBases>
+	</TerrainDef>
+
+-->
+
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>ZWB_CoralithFloor</defName>
+		<label>coralith floor</label>
+		<color>(153,111,124)</color>
+		<texturePath>ZWB_Textures/Terrain/CoralithFloor</texturePath>
+		<costList>
+			<ZWB_CoralithChunk>5</ZWB_CoralithChunk>
+		</costList>
+		<statBases>
+			<Beauty>3</Beauty>
+		</statBases>
+	</TerrainDef>
+
+
+
+	<TerrainDef ParentName="TileStoneBase">
+		<defName>ZWB_FineCoralithFloor</defName>
+		<label>fine coralith floor</label>
+		<description>Exquisite stone tiles, made with no compromises, for expressing economic status. Slow to construct.</description>
+		<color>(135,91,104)</color>
+		<texturePath>ZWB_Textures/Terrain/CoralithFloor</texturePath>
+		<costList>
+			<ZWB_CoralithChunk>16</ZWB_CoralithChunk>
+		</costList>
+		<statBases>
+			<Beauty>6</Beauty>
+			<WorkToBuild>5000</WorkToBuild>
+		</statBases>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+	</TerrainDef>
+
+
+
+</Defs>
+

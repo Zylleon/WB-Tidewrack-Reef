@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>ZWB_SeafoamZiggler</defName>
+		<label>seafoam ziggler</label>
+		<description>A mid sized predatory fish, adapted for land. Though quite wild, the seafoam ziggler is the smartest and most loyal of the ziggler family. They make great pets and work animals once tamed.</description>
+		<statBases>
+			<MoveSpeed>5.3</MoveSpeed>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<MarketValue>350</MarketValue>
+			<Wildness>0.5</Wildness>
+		</statBases>
+		<race>
+			<body>ZWB_QuadrupedLandFish</body>
+			<herdAnimal>true</herdAnimal>
+			<maxPreyBodySize>2.1</maxPreyBodySize>
+			<baseBodySize>0.85</baseBodySize>
+			<baseHungerRate>0.20</baseHungerRate>
+			<baseHealthScale>1.0</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<leatherDef>ZWB_Leather_Ziggler</leatherDef>
+			<trainability>Advanced</trainability>
+			<useMeatFrom>ZWB_Jesterfish</useMeatFrom>
+			<lifeExpectancy>8</lifeExpectancy>
+			<petness>0.5</petness>
+			<nuzzleMtbHours>36</nuzzleMtbHours>
+			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.75</manhunterOnDamageChance>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<specialTrainables>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+			</specialTrainables>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(2.5, 0.7)</li>
+					<li>(3, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.18</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.45</minAge>
+					<soundWounded>ZWB_Ziggler_Wounded</soundWounded>
+					<soundDeath>ZWB_Ziggler_Death</soundDeath>
+					<soundCall>ZWB_Ziggler_Call</soundCall>
+					<soundAngry>ZWB_Ziggler_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundEating>PredatorSmall_Eat</soundEating>
+			<packAnimal>false</packAnimal>
+			<predator>true</predator>
+			<!-- <headPosPerRotation> -->
+			<!-- <li>(0.0, 0, 0.09)</li> -->
+			<!-- <li>(0.28, 0, 0)</li> -->
+			<!-- <li>(0.0, 0, -0.04)</li> -->
+			<!-- <li>(-0.28, 0, 0)</li> -->
+			<!-- </headPosPerRotation> -->
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.9</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left flipper</label>
+				<labelNoLocation>flipper</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>ZWB_FrontLeftFlipper</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right flipper</label>
+				<labelNoLocation>flipper</labelNoLocation>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>ZWB_FrontRightFlipper</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+	</ThingDef>
+
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>ZWB_SeafoamZiggler</defName>
+		<label>seafoam ziggler</label>
+		<race>ZWB_SeafoamZiggler</race>
+		<combatPower>75</combatPower>
+		<ecoSystemWeight>0.45</ecoSystemWeight>
+		<wildGroupSize>1~2</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>seafoam ziggler fry</label>
+				<labelPlural>seafoam ziggler fry</labelPlural>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/SeafoamZiggler/SeafoamZiggler</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/SeafoamZiggler/Dessicated_SeafoamZiggler</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/SeafoamZiggler/SeafoamZiggler</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/SeafoamZiggler/Dessicated_SeafoamZiggler</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>ZWB_Textures/Animals/SeafoamZiggler/SeafoamZiggler</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>ZWB_Textures/Animals/SeafoamZiggler/Dessicated_SeafoamZiggler</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>ZWB_Textures/Animals/SeafoamZiggler/SeafoamZigglerA</texPath>
+			</li>
+			<li>
+				<texPath>ZWB_Textures/Animals/SeafoamZiggler/SeafoamZigglerB</texPath>
+			</li>
+			<li>
+				<texPath>ZWB_Textures/Animals/SeafoamZiggler/SeafoamZigglerC</texPath>
+			</li>
+			<li>
+				<texPath>ZWB_Textures/Animals/SeafoamZiggler/SeafoamZigglerD</texPath>
+			</li>
+		</alternateGraphics>
+	</PawnKindDef>
+
+
+
+
+</Defs>
+
